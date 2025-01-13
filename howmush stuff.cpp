@@ -8,6 +8,8 @@ Reads how many hours you've worked
 Reads your hourly income
 Prints how many items you can buy
 Output: "I can buy 4 PS4, 1 Samsung, 3 TV, 80 game skin"
+
+ 
 #include <iostream>
 using namespace std;
 int main() {

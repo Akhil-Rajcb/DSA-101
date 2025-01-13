@@ -1,3 +1,6 @@
+print the second last number of a given digits
+
+
 #include<iostream>
 
 using namespace std;

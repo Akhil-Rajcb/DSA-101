@@ -1,3 +1,6 @@
+write a program to get the fibonacci series?
+
+
 #include <iostream>
 using namespace std;
 int main() {

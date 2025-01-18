@@ -1,3 +1,5 @@
+write a program to find min,max value from an array of elements? 
+
 #include<iostream>
 #include<limits.h>
 using namespace std;

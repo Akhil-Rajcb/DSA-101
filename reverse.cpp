@@ -1,3 +1,5 @@
+write a program to find the palindrome a given number?
+
 #include <iostream>
 using namespace std;
 int main() {

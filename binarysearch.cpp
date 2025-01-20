@@ -20,6 +20,7 @@ while(low<=high){
      if(a[mid]==target){
         cout<<target<< " found at "<<mid<<ends;
         count++;
+        return 0; 
      }else if(target>a[mid]){
         low=mid+1;
      }else if(target<a[mid]){

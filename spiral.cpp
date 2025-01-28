@@ -31,46 +31,48 @@ for(i=0;i<r;i++) {
     cout << "\n";
 }
 
-while (a.size() != noOfele)
+while (a.size() < noOfele)
 {
+    if(a.size() < noOfele) {
     for(i=minColumn;i<=maxColumn;i++) {
         a.push_back(matrix[minRow][i]);
         cout << "left to right \n";
         for(j=0;j<a.size();j++) {
             cout << "\t" << a[j] <<"\n";
           }
-          }
+          }}
     minRow++;
-
+    if(a.size() < noOfele) {
     for(i=minRow;i<=maxRow;i++) {
         a.push_back(matrix[i][maxColumn]);
          cout << "top to down \n";
         for(j=0;j<a.size();j++) {
             cout << "\t" << a[j] <<"\n";
           }
-    }
+    }}
     maxColumn--;
 
-
+    if(a.size() < noOfele) {
     for(i=maxColumn;i>=minColumn;i--) {
         a.push_back(matrix[maxRow][i]);
          cout << "right to left \n";
         for(j=0;j<a.size();j++) {
             cout << "\t" << a[j] <<"\n";
           }
-    }
+    }}
     maxRow--;
-
+    if(a.size() < noOfele) {
     for(i=maxRow;i>=minRow;i--) {
         a.push_back(matrix[i][minColumn]);
          cout << "down to up \n";
         for(j=0;j<a.size();j++) {
             cout << "\t" << a[j] <<"\n";
           }
-        
+    }  
     }
     minColumn++;
 }
+
 cout<<"\n";
 cout<<"printing spiral order = ";
 for(i=0;i<a.size();i++) {

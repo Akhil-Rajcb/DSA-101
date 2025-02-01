@@ -1,3 +1,5 @@
+print the sub array with max sum 
+
 #include<iostream>
 #include<vector>
 using namespace std;
